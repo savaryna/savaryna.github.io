@@ -130,8 +130,7 @@ div #navtop a:active {
     margin-right: auto;
     position: relative;
     overflow: hidden;
-    background-image: url(img/1.png);
-    
+    background-color: gray;
 }
 
 #Titlu {
