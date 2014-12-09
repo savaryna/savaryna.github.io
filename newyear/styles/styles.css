@@ -1,0 +1,66 @@
+body {
+    overflow: hidden;
+    background: -webkit-radial-gradient(#dd1820, #9b1c1f); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#dd1820, #9b1c1f); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#dd1820, #9b1c1f); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#C40000, #610002); /* Standard syntax */
+    margin: 0;
+    padding: 0;
+}
+
+button {
+  font-family: 'Roboto';
+  position: absolute;
+  line-height: 5px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 24px;
+  display: block;
+  outline: none;
+  height: 250px;
+  width: 80%;
+  top: 200px;
+  margin: 0;
+  left: 10%;
+}
+
+.container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.scene {
+  padding: 0;
+  margin: 0;
+}
+
+.expand-width {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#merry
+{
+  font-family : 'Roboto';
+  font-weight: 900;
+  font-size : 60px;
+  letter-spacing : 0.6px;
+  text-transform : uppercase;
+  color : #FFFFFF;
+}
+
+#chr
+{
+  font-family : 'Roboto';
+  font-weight: 100;
+  font-size : 24px;
+  letter-spacing : 4.8px;
+  text-transform : uppercase;
+  color : #FFFFFF;
+}
