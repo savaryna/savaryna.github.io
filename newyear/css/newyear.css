@@ -1,0 +1,15 @@
+body {
+    overflow: hidden;
+    background: -webkit-radial-gradient(#dd1820, #9b1c1f); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#dd1820, #9b1c1f); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#dd1820, #9b1c1f); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#C40000, #610002); /* Standard syntax */
+}
+#merry
+{
+  font-family : Roboto;
+  font-size : 60px;
+  letter-spacing : 0.6px;
+  text-transform : uppercase;
+  color : #FFFFFF;
+}
