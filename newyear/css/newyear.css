@@ -5,6 +5,13 @@ body {
     background: -moz-radial-gradient(#dd1820, #9b1c1f); /* For Firefox 3.6 to 15 */
     background: radial-gradient(#C40000, #610002); /* Standard syntax */
 }
+#tot {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    position: relative;
+    z-index: 1;
+}
 #merry
 {
   font-family : 'Roboto';
@@ -13,6 +20,11 @@ body {
   letter-spacing : 0.6px;
   text-transform : uppercase;
   color : #FFFFFF;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 1;
 }
 #chrismas
 {
@@ -22,4 +34,16 @@ body {
   letter-spacing : 4.8px;
   text-transform : uppercase;
   color : #FFFFFF;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 1;
+}
+.texA {
+  width: 500px;
+  height: 500px;
+  background-color: #000;
+  position: relative;
+  z-index: 9;
 }
