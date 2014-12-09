@@ -19,8 +19,8 @@ button {
   outline: none;
   height: 250px;
   width: 80%;
-  top: 200px;
-  margin: 0;
+/*  top: 200px;*/
+  margin-top: 50%;
   left: 10%;
 }
 
