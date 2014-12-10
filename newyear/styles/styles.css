@@ -7,69 +7,121 @@ body {
     margin: 0;
     padding: 0;
 }
-
-button {
+/*body {
+  -webkit-filter: blur(5px) !important;
+}*/
+table {
   font-family: 'Roboto';
+  color : #FFFFFF;
   position: absolute;
-  line-height: 2em;
   text-align: center;
-  -webkit-text-align: center;
-  background: rgba(255, 255, 255, 0);
-  border: 0px !important;
   font-size: 24px;
   display: block;
-  outline: none;
-  height: 250px;
-  width: 80%;
-/*  top: 200px;*/
-  margin-top: 35%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+/*  margin-top: -140px;
+  margin-left: -114px;*/
+  transform: translate(-50%, -50%);
 }
 
-.container {
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.scene {
-  padding: 0;
-  margin: 0;
-}
-
-.expand-width {
-  width: 100%;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.margina {
+  border: 1px solid #ddd;
 }
 
 #merry
 {
-  font-family : 'Roboto';
   font-weight: 900;
   font-size: 2.7em;
   letter-spacing : 0.6px;
   text-transform : uppercase;
-  color : #FFFFFF;
   margin: 5px auto 0;
   text-align: center;
 }
 
 #chr
 {
-  font-family : 'Roboto';
   font-weight: 100;
   font-size: 1.4em;
   letter-spacing : 4.8px;
   text-transform : uppercase;
-  color : #FFFFFF;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  margin: 6px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-shadow: 0px 1px #333;
+}
+
+.btn1:hover {
+  box-shadow: 0px 1px 5px #000;
+  background-color: #0099ff;
+}
+
+.btn2:hover {
+  box-shadow: 0px 1px 5px #000;
+  background-color: #006600;
+}
+
+.btn3:hover {
+  box-shadow: 0px 1px 5px #000;
+  background-color: #336699;
+}
+
+.btn1:active {
+  box-shadow: inset 0px 2px rgba(0, 0, 0, 0.6);
+}
+
+.btn2:active {
+  box-shadow: inset 0px 2px rgba(0, 0, 0, 0.6);
+}
+
+.btn3:active {
+  box-shadow: inset 0px 2px rgba(0, 0, 0, 0.6);
+}
+
+/*button:hover {
+  box-shadow: 0px 1px 5px #000;
+  background-color: #333;
+}*/
+
+#anul {
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-size: 2.7em;
+  letter-spacing : 0.6px;
   margin: 5px auto 0;
   text-align: center;
 }
-.brd {
-  border: 1px solid #ddd;
-}
+/*
+.circle {
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #C40000;
+  opacity: 0.2;
+  border-radius: 50%;
+  -webkit-filter: blur(5px);
+}*/
