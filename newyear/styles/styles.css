@@ -75,7 +75,11 @@ button {
   width: 30px;
   height: 30px;
   border: 1px solid #ddd;
-  border-radius: 50%;
+            border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
   font-family: 'Roboto';
   font-weight: 900;
   font-size: 24px;
