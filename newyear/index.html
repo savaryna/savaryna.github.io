@@ -11,52 +11,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
   <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <table>
-    <tbody>
-    <tr>
-        <td id="brad">
-            <img src="img/brad.svg">
-        </td>
-    </tr>
-        <tr>
-            <td class="margina">
-                <p id="merry">MERRY</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p id="chr">CHRISMAS</p>
-            </td>
-        </tr>
-        <tr>
-            <td class="margina">
-            <div id="shb-cont">
-                <object id="shb" data="styles/t1.svg" type="image/svg+xml"></object>
-                <object id="shb" data="styles/o1.svg" type="image/svg+xml"></object>
-                <object id="shb" data="styles/f1.svg" type="image/svg+xml"></object>
-            </div>
-            </td>
-        </tr>
-        <tr>
-        <td id="anul">2015</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td>SHARE ON FACEBOOK</td>
-        </tr>
-    </tfoot>
+        <tbody>
+            <tr>
+                <td id="brad">
+                    <img src="img/brad.svg">
+                </td>
+            </tr>
+            <tr>
+                <td class="margina">
+                    <p id="merry">MERRY</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="chr">CHRISMAS</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="margina">
+                    <div id="shb-cont">
+                        <object id="shb" data="styles/t1.svg" type="image/svg+xml"></object>
+                        <object id="shb" data="styles/o1.svg" type="image/svg+xml"></object>
+                        <object id="shb" data="styles/f1.svg" type="image/svg+xml"></object>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="anul">2015</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>2014 &copy TOFAN ALEX</td>
+            </tr>
+        </tfoot>
     </table>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <!-- Zapada -->
+    <!-- Zapada -->
     <script type="text/javascript" src="snow/ThreeCanvas.js"></script>
     <script type="text/javascript" src="snow/Snow.js"></script>
-    <script>jQuery(document).ready(function() { initSnow(jQuery("body")); });</script>
-    <!-- / Zapada -->
+    <script>
+        jQuery(document).ready(function() {
+            initSnow(jQuery("body")); 
+        // $(".letitsnow").css({ "-webkit-filter" : "blur(3px)" });
+    });
+</script>
+<!-- / Zapada -->
 </body>
 </html>

@@ -1,25 +1,16 @@
 body {
     overflow: hidden;
-    background: -webkit-radial-gradient(#dd1820, #320000);
+/*    background: -webkit-radial-gradient(#dd1820, #320000);
     background: -o-radial-gradient(#dd1820, #320000);
     background: -moz-radial-gradient(#dd1820, #320000);
-    background: radial-gradient(#C40000, #320000);
+    background: radial-gradient(#C40000, #320000);*/
     margin: 0;
     padding: 0;
+    background-image: url("file:///D:/b1g.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-
-/* body:before {
-content: "";
-position: absolute;
-background-image: url("ncz.jpg");
-background-size: cover;
-z-index: -1; Keep the background behind the content
-height: 20%; width: 20%; Using Glen Maddern's trick /via @mente
-don't forget to use the prefixes you need
-transform: scale(5);
-transform-origin: top left;
--webkit-filter: blur(4px);
-} */
 
 table {
     font-family: 'Roboto';
@@ -30,13 +21,8 @@ table {
     display: block;
     top: 50%;
     left: 50%;
-/*  margin-top: -140px;
-margin-left: -114px;*/
--webkit-transform: translate(-50%, -50%);
--moz-transform: translate(-50%, -50%);
--o-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 #brad {
@@ -79,8 +65,7 @@ transform: translate(-50%, -50%);
 
 #shb-cont {
     display: inline-block;
-    vertical-align: middle;
-/*    background: darkred;*/
+    vertical-align: middle
 }
 
 #shb {
@@ -102,9 +87,9 @@ transform: translate(-50%, -50%);
 
 tfoot tr td {
     display: inline-block;
-    border: 1px solid #eee;
+    /*border: 1px solid #eee;*/
     font-family: 'Roboto';
-    font-weight: 200;
+    font-weight: 100;
     font-size: 0.4em;
     letter-spacing: 2px;
 }
