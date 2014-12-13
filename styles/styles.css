@@ -24,6 +24,16 @@ table {
     transform: translate(-50%, -50%);
 }
 
+.shadow {
+    position: absolute;
+    z-index: 2;
+    width: 114px;
+    height: 56px;
+    right: 0;
+    background: #000;
+    opacity: .06;
+}
+
 .brad-cell {
     line-height: 0;
 }
@@ -94,18 +104,41 @@ tfoot tr td {
     height: 56px;
     margin: 0 auto;
     line-height: 58px;
-    -webkit-animation: l1 8s 1s linear infinite;
-    -moz-animation: l1 8s 1s linear infinite;
-    -o-animation: l1 8s linear infinite;
-    -ms-animation: l1 8s linear infinite;
+    -webkit-animation: anim 0.1s steps(6) 25,
+                       anim 14s 3s linear infinite;
+    -moz-animation: anim 0.1s steps(6) 25,
+                    anim 14s 3s linear infinite;
+    -ms-animation: anim 0.1s steps(6) 25,
+                   anim 14s 3s linear infinite;
+    -o-animation: anim 0.1s steps(6) 25,
+                  anim 14s 3s linear infinite;
+    animation: anim 0.1s steps(6) 25,
+               anim 14s 3s linear infinite;
 }
 
-@-webkit-keyframes l1 {
-from {top: 0;}
-to{top: -336px;}
+@-webkit-keyframes anim {
+    from {top: 0;}
+      to {top: -336px;}
 }
 
-@keyframes l1 {
-from {top: 0;}
-to{top: -336px;}
+@-moz-keyframes anim {
+    from {top: 0;}
+      to {top: -336px;}
 }
+
+@-ms-keyframes anim {
+    from {top: 0;}
+      to {top: -336px;}
+}
+
+@-o-keyframes anim {
+    from {top: 0;}
+      to {top: -336px;}
+}
+
+@keyframes anim {
+    from {top: 0;}
+      to {top: -336px;}
+}
+
+/* Text slider end */
