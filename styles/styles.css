@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("bg.jpg");
-    background-size: cover;
+    -webkit-background-size: cover;
+            background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -21,8 +22,8 @@ table {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -46,6 +47,9 @@ table {
 
 .margina {
     border: 1px solid #eee;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     padding: 0;
     margin: 0;
