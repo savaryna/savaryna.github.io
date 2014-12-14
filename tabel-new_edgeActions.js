@@ -29,6 +29,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 667, function(sym, e) {
+         $('#Stage_fb-like-bb').append($('<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fsavaryna.github.io%2F&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35&amp;appId=1516810475268920" scrolling="no" frameborder="0" align="middle" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>'));
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 

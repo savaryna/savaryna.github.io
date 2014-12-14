@@ -252,10 +252,11 @@
                         {
                             id: 'fb-like-bb',
                             type: 'rect',
-                            rect: ['0px', 'auto', '219px', '30px', 'auto', '0px'],
+                            rect: ['64px', 'auto', '93px', '20px', 'auto', '0px'],
                             overflow: 'hidden',
                             fill: ["rgba(0,0,0,0.00)"],
-                            stroke: [0,"rgb(255, 255, 255)","none"]
+                            stroke: [0,"rgb(255, 255, 255)","none"],
+                            userClass: "bookface"
                         }
                     ],
                     style: {
