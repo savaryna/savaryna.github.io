@@ -1,0 +1,527 @@
+/*Slideshow*/
+/*Linkuri*/
+
+div #navtop a:hover {
+    border-bottom: 2px solid #00BCF2;
+}
+div #navtop a:active {
+    border-bottom: 2px solid #FF8C0D;
+}
+
+/*Edited scrollbar*/
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 100px #eee;
+    -webkit-margin-right: 55px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 100px #848484; 
+}
+
+/*Stil pentru gist.githhub*/
+
+.file-data {
+    width: 100%;
+    height: 210px;
+    overflow-x: auto;
+}
+.gist-file {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border-bottom: 0px !important;
+    border-radius: 3px 3px 0px 0px !important;    
+}
+.ghead {
+    display: block;
+    width: 100%;
+    height: 28px;
+    background-color: #ddd;  
+    padding-left: 5px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    font-family: segoe UI Light;
+    color: #6e6e6e;
+}
+
+/*Stil pentru pastebin*/
+
+.embedPastebin {
+    height: 100%;
+/*    overflow: hidden !important;*/
+    
+}
+/*.PAStitle {
+    width: 100%;
+    height: 28px;
+    position: static;
+    overflow: hidden !important;
+}
+.PASbody{
+    overflow: auto;
+    overflow-x: hidden;
+    width: inherit;
+    height: 210px;
+}*/
+
+/*Stil pagina*/
+
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#Body {
+    float: none;
+    height: 1358px;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 70%;
+    margin-right: auto;
+}
+
+#head {
+    float: none;
+    height: 79px;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    margin-right: auto;
+    padding-bottom: 3px;
+    display: block;
+}
+
+#Menu {
+    float: none;
+    height: 279px;
+    margin: 0px auto;
+    clear: none;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: block;
+}
+
+#menu-bar {
+    float: none;
+    height: 28px;
+    margin: 36px auto 15px;
+    clear: none;
+    width: 100%;
+    background-color: rgb(227, 90, 51);
+}
+
+#slideshow {
+    float: none;
+    height: 200px;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    background-color: gray;
+}
+
+#Titlu {
+    float: none;
+    height: 41px;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+#Subtitlu {
+    float: none;
+    height: 39px;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    margin-right: auto;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 0px;
+}
+
+#Table {
+    float: none;
+    height: 750px;
+    margin-left: auto;
+    margin-top: 20px;
+    clear: none;
+    width: 100%;
+    margin-right: auto;
+    padding-top: 0px;
+    display: block;
+}
+
+#Footer {
+    float: none;
+    height: 150px;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    margin-right: auto;
+    padding-top: 95px;
+    padding-bottom: 15px;
+    display: block;
+}
+
+#programarea {
+    float: left;
+    font-size: 1.8em;
+    width: 160px;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    font-family: 'Segoe UI Light';
+    color: #575757;
+}
+
+#logo {
+    float: left;
+    height: 25px;
+    margin-left: 0%;
+    margin-top: 48px;
+    clear: none;
+    width: 188px;
+    display: block;
+}
+
+#text {
+    float: left;
+    font-size: 1.6em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    font-family: 'Segoe UI';
+    display: block;
+    color: rgb(0, 0, 0);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#rsec {
+    float: right;
+    height: 71px;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    width: 57%;
+    margin-right: 0%;
+    padding-top: 47px;
+}
+
+#text1 {
+    float: right;
+    font-size: 0.8em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 12px;
+    clear: none;
+    min-height: 0px;
+    font-family: 'Segoe UI';
+    margin-right: 0px;
+}
+
+#text2 {
+    float: right;
+    font-size: 0.8em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 12px;
+    clear: none;
+    min-height: 0px;
+    margin-right: 15px;
+}
+
+#text3 {
+    float: right;
+    font-size: 0.8em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 12px;
+    clear: none;
+    min-height: 0px;
+    margin-right: 15px;
+}
+
+#text4 {
+    float: right;
+    font-size: 0.8em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 12px;
+    clear: none;
+    min-height: 0px;
+    margin-right: 15px;
+}
+
+#text5 {
+    float: left;
+    font-size: 1.4em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 6px;
+    margin-top: 2px;
+    clear: none;
+    min-height: 0px;
+    margin-right: 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI Semibold';
+}
+
+#text8 {
+    float: left;
+    font-size: 14px;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    font-family: 'Segoe UI';
+    color: #575757;
+}
+
+#sign {
+    float: right;
+    height: 28px;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    width: 84px;
+    margin-right: 0%;
+    background-color: rgb(242, 242, 242);
+}
+
+#sep {
+    float: right;
+    height: 28px;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    width: 2.0000000008921877px;
+    margin-right: 0%;
+    background-color: rgb(255, 255, 255);
+}
+
+#navli {
+    float: right;
+    height: 28px;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    width: 48%;
+    margin-right: 0.00275239%;
+}
+
+#text6 {
+    float: none;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI';
+    margin-right: auto;
+}
+
+#prog {
+    float: right;
+    height: 28px;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    width: 104px;
+    margin-right: 0px;
+    padding-top: 6px;
+    padding-right: 5px;
+    padding-left: 2px;
+}
+
+#prog1 {
+    float: right;
+    height: 28px;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    width: 104px;
+    margin-right: 0px;
+    padding-top: 6px;
+    padding-right: 2px;
+    padding-left: 5px;
+}
+
+#text7 {
+    float: none;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI';
+    margin-right: auto;
+}
+
+#navtop {
+    float: none;
+    height: 24px;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 267px;
+    margin-right: 0px;
+}
+
+#_1rw {
+    float: none;
+    height: 240px;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    margin-right: auto;
+    background-color: rgb(0, 0, 0,0);
+}
+
+#_2rw {
+    float: none;
+    height: 240px;
+    margin-left: auto;
+    margin-top: 15px;
+    clear: none;
+    width: 100%;
+    margin-right: auto;
+    background-color: rgb(0,0,0,0);
+}
+
+#_3rw {
+    float: none;
+    height: 240px;
+    margin-left: auto;
+    margin-top: 15px;
+    clear: none;
+    width: 100%;
+    margin-right: auto;
+    background-color: rgb(0,0,0,0);
+}
+
+@media only screen and (max-width: 720px) {
+    #text {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: none;
+    }
+
+    #logo {
+        margin-top: 9px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+    }
+
+    #rsec {
+        width: 100%;
+        padding: 5px 0% 0px;
+        height: 29px;
+        margin-right: auto;
+        margin-top: 1px;
+        clear: none;
+        margin-left: auto;
+        float: none;
+    }
+
+    #head {
+        height: 68px;
+    }
+
+    #navtop {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+    }
+
+    #Menu {
+        height: 256px;
+    }
+
+    #menu-bar {
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+
+    #Subtitlu {
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 396px) {
+    #rsec {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
+
