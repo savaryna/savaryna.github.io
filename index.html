@@ -82,12 +82,14 @@
     <div class="fb-like" data-href="http://savaryna.github.io/" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <Script>
+        var fb-butoane = sym.$("fb-like-bb");
+        $('<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fsavaryna.github.io%2F&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35&amp;appId=1516810475268920" scrolling="no" frameborder="0" align="middle" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>').appendTo(sym.$('fb-like-bb'));
+    </Script>
     <script type="text/javascript" src="js/ThreeCanvas.js"></script>
     <script type="text/javascript" src="js/Snow.js"></script>
     <script>
         jQuery(document).ready(function() {
-        var fb-butoane = sym.$("fb-like-bb");
-        $('<div class="fb-like" data-href="http://savaryna.github.io/" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>').appendTo(sym.$('fb-like-bb'));
         initSnow(jQuery("body"));
         });
     </script>
