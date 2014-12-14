@@ -64,11 +64,7 @@
 </head>
 
 <body>
-<!-- SCM Music Player http://scmplayer.net -->
-<script type="text/javascript" src="http://scmplayer.net/script.js" 
-data-config="{'skin':'http://static.tumblr.com/d41lcii/7Ysmre077/simplegray.css','volume':28,'autoplay':true,'shuffle':true,'repeat':1,'placement':'bottom','showplaylist':true,'playlist':'https://soundcloud.com/yuhuhack/sets/chrismas-collection'}" ></script>
-<!-- SCM Music Player script end -->
-
+    <audio id="aud" autoplay="true" loop><source src="bell.mp3" type="audio/ogg"></audio>
 
     <div id="Stage" class="tabel"></div>
 
@@ -80,6 +76,8 @@ data-config="{'skin':'http://static.tumblr.com/d41lcii/7Ysmre077/simplegray.css'
         jQuery(document).ready(function() {
         initSnow(jQuery("body"));
         });
+        var audi = document.getElementById("aud");
+        audi.volume = 0.06;
     </script>
 </body>
 </html>
