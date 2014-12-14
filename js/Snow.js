@@ -86,7 +86,7 @@ var windowHalfX = window.innerWidth / 2;
 var windowHalfY = window.innerHeight / 2;
 
 var particleImage = new Image();
-particleImage.src = 'snow/img/ParticleSmoke.png';
+particleImage.src = 'js/img/flake.png';
 
 function initSnow(elem) {
 

@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="author" content="Alex Tofan">
     <meta name="description" content="Share the joy of winter holidays!">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -10,17 +11,17 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="img/chrome-touch-icon-192x192.png">
+    <link rel="icon" sizes="192x192" href="images/chrome-touch-icon-192x192.png">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Happy Holidays | AT">
-    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="img/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#333333">
+    <meta name="msapplication-TileImage" content="images/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
 
     <!-- Page styles -->
     <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
@@ -43,71 +44,49 @@
         ga('create', 'UA-55503330-4', 'auto');
         ga('send', 'pageview');
     </script>
+
+    <!--Adobe Edge Runtime-->
+    <script type="text/javascript" charset="utf-8" src="js/edge.5.0.0.min.js"></script>
+    <style>
+        .edgeLoad-tabel { visibility:hidden; }
+    </style>
+    <script>
+        AdobeEdge.loadComposition('tabel-new', 'tabel', {
+        scaleToFit: "none",
+        centerStage: "both",
+        minW: "0",
+        maxW: "undefined",
+        width: "219px",
+        height: "310px"
+        }, {dom: [ ]}, {dom: [ ]});
+    </script>
+    <!--Adobe Edge Runtime End-->
 </head>
+
 <body>
     <!-- Facebook SDK -->
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1516810475268920&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+    <script>
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1516810475268920&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
     <!-- /Facebook SDK -->
-    <table>
-        <tbody>
-            <tr>
-                <td class="brad-cell">
-                    <div class="shadow"></div>
-                    <object class="brad" data="img/bradalb-01.svg" type="image/svg+xml"></object>
-                </td>
-            </tr>
-            <tr>
-                <td class="margina">
-                    <div class="shadow"></div>
-                    <p class="merry">MERRY</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p class="chr">CHRISMAS</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="margina">
-                    <div class="slider-container">
-                        <div class="shadow"></div>
-                        <div class="layer-master layer1" >AND</div>
-                        <div class="layer-master layer2" >A</div>
-                        <div class="layer-master layer3" >HAPPY</div>
-                        <div class="layer-master layer4" >NEW</div>
-                        <div class="layer-master layer5" >YEAR</div>
-                        <div class="layer-master layer6" >2015</div>
-                        <div class="layer-master layer7" >AND</div>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>
-                    <div class="fb-like" data-href="http://savaryna.github.io/" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-                </td>
-            </tr>
-        </tfoot>
-    </table>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    <!-- Zapada -->
-    <script type="text/javascript" src="snow/ThreeCanvas.js"></script>
-    <script type="text/javascript" src="snow/Snow.js"></script>
+    <div id="Stage" class="tabel"></div>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ThreeCanvas.js"></script>
+    <script type="text/javascript" src="js/Snow.js"></script>
     <script>
-    jQuery(document).ready(function() {
+        jQuery(document).ready(function() {
         initSnow(jQuery("body"));
-    });
+        });
     </script>
-    <!-- / Zapada -->
 </body>
 </html>
