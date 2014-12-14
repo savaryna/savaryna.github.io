@@ -37,14 +37,6 @@ table {
     opacity: .06;
 }
 
-.brad-cell {
-    line-height: 0;
-}
-
-.brad {
-    width: 220px;
-}
-
 .margina {
     border: 1px solid #eee;
     display: -webkit-inline-box;
@@ -110,15 +102,15 @@ tfoot tr td {
     margin: 0 auto;
     line-height: 58px;
     -webkit-animation: anim 0.1s steps(6) 25,
-                       anim 14s 3s linear infinite;
+                       anim 12s 3s linear infinite;
     -moz-animation: anim 0.1s steps(6) 25,
-                    anim 14s 3s linear infinite;
+                    anim 12s 3s linear infinite;
     -ms-animation: anim 0.1s steps(6) 25,
-                   anim 14s 3s linear infinite;
+                   anim 12s 3s linear infinite;
     -o-animation: anim 0.1s steps(6) 25,
-                  anim 14s 3s linear infinite;
+                  anim 12s 3s linear infinite;
     animation: anim 0.1s steps(6) 25,
-               anim 14s 3s linear infinite;
+               anim 12s 3s linear infinite;
 }
 
 @-webkit-keyframes anim {
