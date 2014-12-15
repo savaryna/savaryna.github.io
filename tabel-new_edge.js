@@ -112,10 +112,10 @@
                                 type: 'text',
                                 rect: ['0px', '0px', '100%', '44px', 'auto', 'auto'],
                                 overflow: 'hidden',
-                                text: "CHRISMAS",
+                                text: "CHRISTMAS",
                                 align: "center",
                                 userClass: "edity",
-                                font: ['Roboto', [38, "px"], "rgba(255,255,255,1.00)", "100", "none solid rgb(0, 0, 0)", "normal", "break-word", ""],
+                                font: ['Roboto', [36, "px"], "rgba(255,255,255,1.00)", "100", "none solid rgb(0, 0, 0)", "normal", "break-word", ""],
                                 textStyle: ["", "", "44px", ""]
                             }]
                         },
