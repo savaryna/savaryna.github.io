@@ -1,62 +1,111 @@
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
-<h1>No.</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happy new year!</title>
+    <style>
+      html, body {
+      width: 100%;
+      height: 100%;
+      }
+      body {
+      display: flex;
+      padding-top: 64px;
+      justify-content: center;
+      background-color: #10031f;
+      font-weight: bold;
+      font-family: monospace;
+      }
+      .tree {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      transform-style: preserve-3d;
+      perspective: 1500px;
+      perspective-origin: 50% 10%;
+      }
+      .tree__led__strip {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      transform-origin: top center;
+      }
+      .tree__led {
+      display: inline-flex;
+      line-height: 1;
+      color: white;
+      font-size: 24px;
+      transition: color 100ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tree"></div>
+    <script>
+      "use strict";
+      
+      function generateTree(stripLength, stripsCount) {
+        const tree = document.querySelector('.tree');
+        const stripElement = document.createElement('div');
+        stripElement.classList.add('tree__led__strip');
+        const ledElement = document.createElement('div');
+        ledElement.classList.add('tree__led');
+        ledElement.innerText = '*';
+        tree.innerHTML = '';
+      
+        for (let led = 0; led < stripLength; led++) {
+          const ledClone = ledElement.cloneNode(true);
+          ledClone.style.fontSize = Math.max(1, led / 2) + 'px';
+          stripElement.appendChild(ledClone);
+        }
+      
+        for (let strip = 0; strip < stripsCount; strip++) {
+          const stripClone = stripElement.cloneNode(true);
+          stripClone.style.transform = 'rotateY(' + (strip * (180 / stripsCount) - 90) + 'deg)' + 'rotateX(18deg)';
+          tree.appendChild(stripClone);
+        }
+      }
+      
+      let leds = null;
+      let start = null;
+      let fps = 5;
+      let frame = 1;
+      let frames = 60;
+      let seed = Math.floor(Math.random() * 100) || 7;
+      
+      function setup(timestamp) {
+        start = timestamp;
+        generateTree(50, 18);
+        loop(timestamp);
+      }
+      
+      function update(frame) {
+        if (!leds) {
+          leds = document.querySelectorAll('.tree .tree__led');
+        }
+      
+        for (let [index, led] of Object.entries(leds)) {
+          const hue = index * frame * seed;
+          led.style.color = 'hsl(' + hue + 'deg, 100%, 45%)';
+        }
+      }
+      
+      function loop(timestamp) {
+        window.requestAnimationFrame(loop);
+        const elapsed = timestamp - start;
+      
+        if (frame > frames) {
+          frame = 1;
+        }
+      
+        if (elapsed > 1000 / fps) {
+          start = timestamp;
+          update(frame);
+          frame++;
+        }
+      }
+      
+      window.requestAnimationFrame(setup);
+    </script>
+  </body>
+</html>
